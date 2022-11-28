@@ -23,12 +23,9 @@ class SaveDataPost {
     }
     
     func getDataPost(idPost:Int) -> [String] {
-        
             let id = "\(idPost)"
         let post: [String] = UserDefaults.standard.stringArray(forKey: "postUser\(id)") ?? [""]
-            
            return post
-        
     }
     
     func validate(id: Int, idUser:Int,  title:String, body:String) -> Bool {
@@ -51,9 +48,7 @@ class SaveDataPost {
             }else{
                 return false
             }
-              
         }else{
-            
             print("No hay datos de usuario grabados en el objeto global de userdefaults")
             return false
         }

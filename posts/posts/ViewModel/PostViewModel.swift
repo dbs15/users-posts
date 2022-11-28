@@ -44,6 +44,4 @@ class PostViewModel: ObservableObject {
         }
         task.resume()
     }
-    
-    
 }

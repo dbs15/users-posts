@@ -13,7 +13,6 @@ struct PostsView: View {
     @Binding var idPost : String
     @Binding var id: Int
     
-    
     var body: some View {
         VStack {
                 ScrollView {
@@ -36,22 +35,10 @@ struct PostsView: View {
                                 .padding()
                             }
                         }
-                           
-                        
-                        
-                        
                     }
-                        
-                        
-                    
                 }
-            
-              
         }
         .padding()
-        
     }
-
-    
 }
 

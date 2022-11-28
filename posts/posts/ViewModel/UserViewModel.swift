@@ -33,7 +33,6 @@ class UserViewModel: ObservableObject {
                         if (!self.userdata.validate(id: user.id, name: user.name, phone: user.phone, mail: user.email)){
                             self.userdata.saveData(idUser: user.id, name: user.name, phone: user.phone, email: user.email)
                         }
-                        
                     }
                 }
             } else if let httpResponse = response as? HTTPURLResponse,
@@ -43,6 +42,4 @@ class UserViewModel: ObservableObject {
         }
         task.resume()
     }
-    
-    
 }

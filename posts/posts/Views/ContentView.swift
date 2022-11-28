@@ -43,25 +43,15 @@ struct ContentView: View {
                                     
                                 }
                                 .frame(maxWidth: .infinity, alignment: .leading)
-                                
-
-                                
                             }
                             .padding()
                         }
-                        
-                        
                     }
                 }
                 .searchable(text: $searchText)
                 .navigationTitle("Users And Posts")
-                
-            
-              
         }
         .padding()
-        
-        
     }
 }
 
